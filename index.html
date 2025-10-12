@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Payment Tracker</title>
+  <meta name="description" content="Payment Tracker helps you manage your payments, cards, and expenses effortlessly with smart reminders and iCloud sync." />
+  <meta name="theme-color" content="#0b1220" />
+  <style>
+    :root {
+      --bg: #0b1220;
+      --text: #e8eefb;
+      --muted: #b2c1de;
+      --accent: #6aa5ff;
+      --accent-2: #8ef1d6;
+      --stroke: rgba(255,255,255,.12);
+    }
+    @media (prefers-color-scheme: light) {
+      :root {
+        --bg: #f7f9ff;
+        --text: #0b1220;
+        --muted: #4b5770;
+        --accent: #2b66ff;
+        --accent-2: #06c2a3;
+        --stroke: rgba(12,20,35,.09);
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, system-ui, Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    header, footer {
+      padding: 20px;
+      text-align: center;
+      border-bottom: 1px solid var(--stroke);
+    }
+    footer {
+      border-top: 1px solid var(--stroke);
+      border-bottom: none;
+      color: var(--muted);
+      font-size: 14px;
+    }
+    main {
+      max-width: 700px;
+      margin: 60px auto;
+      padding: 0 20px;
+      text-align: center;
+    }
+    h1 {
+      font-size: clamp(28px, 5vw, 42px);
+      margin-bottom: 10px;
+    }
+    p {
+      color: var(--muted);
+      font-size: 18px;
+      margin-bottom: 24px;
+    }
+    a.btn {
+      display: inline-block;
+      background: linear-gradient(135deg, var(--accent), var(--accent-2));
+      color: #0a1020;
+      padding: 12px 20px;
+      border-radius: 12px;
+      text-decoration: none;
+      font-weight: 600;
+      margin: 6px;
+    }
+    a.link {
+      color: var(--accent);
+      text-decoration: none;
+    }
+    a.link:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h2>Payment Tracker</h2>
+  </header>
+  <main>
+    <h1>Track your payments effortlessly.</h1>
+    <p>Manage bills, cards, and recurring transactions with smart reminders and iCloud sync — all in one simple app.</p>
+    <a class="btn" href="https://apps.apple.com/" target="_blank" rel="noopener">Get on the App Store</a>
+
+    <p style="margin-top:40px;">
+      <a class="link" href="privacy.html">Privacy Policy</a>
+    </p>
+  </main>
+  <footer>
+    <p>Contact: <a class="link" href="mailto:ozgun.gungor@hotmail.com">ozgun.gungor@hotmail.com</a></p>
+    <p>© <span id="year"></span> Payment Tracker. All rights reserved.</p>
+  </footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
