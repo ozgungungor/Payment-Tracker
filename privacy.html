@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Privacy Policy — Payment Tracker</title>
+  <meta name="description" content="Privacy Policy for Payment Tracker app." />
+  <style>
+    :root {
+      --bg: #0b1220;
+      --text: #e8eefb;
+      --muted: #b2c1de;
+      --accent: #6aa5ff;
+      --stroke: rgba(255,255,255,.12);
+    }
+    @media (prefers-color-scheme: light) {
+      :root {
+        --bg: #f7f9ff;
+        --text: #0b1220;
+        --muted: #4b5770;
+        --accent: #2b66ff;
+        --stroke: rgba(12,20,35,.09);
+      }
+    }
+    body {
+      margin: 0;
+      font-family: -apple-system, system-ui, Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    header, footer {
+      text-align: center;
+      padding: 20px;
+      border-bottom: 1px solid var(--stroke);
+    }
+    footer {
+      border-top: 1px solid var(--stroke);
+      border-bottom: none;
+      color: var(--muted);
+      font-size: 14px;
+    }
+    main {
+      max-width: 800px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+    h1 {
+      text-align: center;
+      font-size: clamp(26px, 4vw, 36px);
+      margin-bottom: 30px;
+    }
+    p, li {
+      color: var(--muted);
+      font-size: 17px;
+      margin-bottom: 18px;
+    }
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h2>Payment Tracker</h2>
+  </header>
+  <main>
+    <h1>Privacy Policy</h1>
+
+    <p><strong>Effective Date:</strong> January 1, 2025</p>
+
+    <p>Payment Tracker respects your privacy. This app does not collect, store, or share any personal data outside your devices. All financial data, reminders, and transactions you enter are securely stored on your device and optionally synced to your private iCloud account through CloudKit.</p>
+
+    <h3>Data Storage</h3>
+    <p>Your data is stored locally on your iPhone or iPad. If you enable iCloud, your data is synchronized across your devices via Apple’s secure CloudKit infrastructure. No one, including the app developer, can access your data.</p>
+
+    <h3>Analytics and Tracking</h3>
+    <p>Payment Tracker does not use analytics tools, advertising frameworks, or third-party tracking technologies.</p>
+
+    <h3>Permissions</h3>
+    <p>The app may request access to your Calendar to display payment reminders or related events. This data stays on your device and is never uploaded or shared.</p>
+
+    <h3>Contact</h3>
+    <p>If you have any questions about this Privacy Policy, please contact: <a href="mailto:ozgun.gungor@hotmail.com">ozgun.gungor@hotmail.com</a></p>
+
+    <p><a href="index.html">← Back to Home</a></p>
+  </main>
+  <footer>
+    <p>© <span id="year"></span> Payment Tracker. All rights reserved.</p>
+  </footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
