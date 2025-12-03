@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Terms of Use — Payment Tracker</title>
+  <meta name="description" content="Terms of Use for Payment Tracker app." />
+  <style>
+    :root {
+      --bg: #0b1220;
+      --text: #e8eefb;
+      --muted: #b2c1de;
+      --accent: #6aa5ff;
+      --stroke: rgba(255,255,255,.12);
+    }
+    @media (prefers-color-scheme: light) {
+      :root {
+        --bg: #f7f9ff;
+        --text: #0b1220;
+        --muted: #4b5770;
+        --accent: #2b66ff;
+        --stroke: rgba(12,20,35,.09);
+      }
+    }
+    body {
+      margin: 0;
+      font-family: -apple-system, system-ui, Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+    }
+    header, footer {
+      text-align: center;
+      padding: 20px;
+      border-bottom: 1px solid var(--stroke);
+    }
+    footer {
+      border-top: 1px solid var(--stroke);
+      border-bottom: none;
+      color: var(--muted);
+      font-size: 14px;
+      margin-top: 50px;
+    }
+    main {
+      max-width: 800px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+    h1 {
+      text-align: center;
+      font-size: clamp(28px, 5vw, 40px);
+      margin-bottom: 35px;
+    }
+    h2 {
+      font-size: 22px;
+      margin-top: 40px;
+      margin-bottom: 14px;
+    }
+    p, li {
+      color: var(--muted);
+      font-size: 17px;
+      margin-bottom: 16px;
+    }
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .back {
+      display: inline-block;
+      margin-top: 40px;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h2>Payment Tracker</h2>
+  </header>
+
+  <main>
+    <h1>Terms of Use</h1>
+
+    <p><strong>Effective Date:</strong> January 1, 2025</p>
+
+    <h2>1. Acceptance of Terms</h2>
+    <p>
+      By downloading, installing, or using Payment Tracker (“the App”), you agree to be bound by these Terms of Use.
+      If you do not agree, do not use the App.
+    </p>
+
+    <h2>2. Use of the App</h2>
+    <p>
+      Payment Tracker is designed to help you manage your payments, cards, and reminders. You agree to use the App only
+      for lawful purposes and in accordance with these Terms.
+    </p>
+
+    <h2>3. Subscription and Payments</h2>
+    <p>
+      The App may offer auto-renewable subscriptions for additional features. All payments are handled through
+      Apple’s In-App Purchase system. Prices, duration, and terms are clearly indicated before purchase.
+    </p>
+
+    <h2>4. Privacy</h2>
+    <p>
+      Your personal data is protected in accordance with our
+      <a href="privacy.html">Privacy Policy</a>. By using the App, you consent to the collection and use
+      of data as described in the Privacy Policy.
+    </p>
+
+    <h2>5. Intellectual Property</h2>
+    <p>
+      All content, design, and code in the App are the property of the developer and are protected by copyright laws.
+      You may not reproduce, distribute, or modify the App without prior written consent.
+    </p>
+
+    <h2>6. Limitation of Liability</h2>
+    <p>
+      The App is provided “as is” without warranties of any kind. The developer is not liable for any damages,
+      losses, or expenses resulting from the use of the App.
+    </p>
+
+    <h2>7. Modifications</h2>
+    <p>
+      The developer may update the App or these Terms at any time. Continued use of the App constitutes acceptance
+      of any updated Terms.
+    </p>
+
+    <h2>8. Governing Law</h2>
+    <p>
+      These Terms are governed by the laws of your country of residence and applicable Apple regulations.
+    </p>
+
+    <h2>9. Contact</h2>
+    <p>
+      For any questions regarding these Terms of Use, please contact:
+      <a href="mailto:ozgun.gungor@hotmail.com">ozgun.gungor@hotmail.com</a>
+    </p>
+
+    <a class="back" href="index.html">← Back to Home</a>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> Payment Tracker. All rights reserved.</p>
+    <p>
+      <a href="privacy.html">Privacy Policy</a> ·
+      <a href="terms.html">Terms of Use</a>
+    </p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
